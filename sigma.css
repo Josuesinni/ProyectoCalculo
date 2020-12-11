@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+.sigma-1{
+    margin-top: 60px;
+    margin-left: 300px;
+    height: 300px;
+}
+.sigma-symbol{
+    font-size: 120px;
+    margin-top: 18px;
+    position: absolute;
+}
+#numerador{
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    position: absolute;
+    margin-left: 5px;
+}
+#multiplicador{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+#exponente{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+#label-exp{
+    margin-left: 140px; 
+    font-size: 30px; 
+    margin-top:70px;
+    position: absolute;
+}
+#base,.base{
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    position: absolute;
+    margin-top: 140px;
+}
+.btn-calc{
+   margin-left: 500px;
+}
+.sigma{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 220px;
+    margin-top: 80px;
+    width: 900px;
+}
+.sigma h1{
+    font-size: 40px;
+}
+.proceso{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 80px;
+}
+
+.intsuma {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.intsuma > span {
+    display: block;
+    font-size: 70%;
+}
+.intsuma .lim-up {
+    margin-bottom: -1.0ex;
+}
+.intsuma .lim {
+    margin-top: -0.5ex;
+}
+.intsuma .sum {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+.intsuma .sum-frac {
+    font-size: 1.5em;
+    font-weight: 100;
+}
+.fraction {
+    display: inline-block;
+    vertical-align: middle; 
+    margin: 0 0.2em 0.4ex;
+    text-align: center;
+}
+.fraction > span {
+    display: block;
+    padding-top: 0.15em;
+}
+.fraction span.fdn {border-top: thin solid black;}
+.fraction span.bar {display: none;}
+.fraction span.fdn {border-top: thin solid black;}
+.fraction span.bar {display: none;}
+
+.resultado{
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 240px;
+    margin-top:60px;
+}
+.resultado label{
+    font-size: 18px;
+}
+#btn{
+    font-size: 15px;
+}
+.grafica{
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    right: 20px;
+}
+.eq-c1 span{
+    font-size: 18px;
+}
+.cart{
+    position: absolute;
+    width: 140px;
+}
+.ls{
+    left: 110px;
+}
+.indice{
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.li{
+    margin-top: 80px;
+    left: 160px;
+}
+.li-1{
+    margin-top: 80px;
+    left: 300px;
+}

@@ -1,0 +1,93 @@
+<html>
+      
+   <head>
+   <title> Suma de Riemann</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="sigma.css">
+   <link rel="stylesheet" href="banner.css">   
+   </head>
+   <body>
+      <header>
+         <div>
+             <h2 class="title">Proyecto de Calculo</h2>
+             <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="sigma.html">Notación Sigma</a></li>
+                <li><a href="integral.html">Integrales</a></li>
+                <li><a href="rieman.html">Sumas de Riemann</a></li>
+                <li><a href="anti.html">Antiderivadas</a></li>
+            </ul>
+         </div>
+         <nav>
+            
+         </nav>
+     </header>
+      <section class="sigma"> 
+         <h1 style="padding-bottom: 30px;">Sumas de Riemann</h1>
+         <p>En matemáticas, la Suma de Riemann es un tipo de aproximación del valor de una integral mediante una suma finita. </br>
+             Se llama así en honor al matemático alemán del siglo XIX, Bernhard Riemann.</p>
+             <p>La suma se calcula dividiendo la región en formas (rectángulos, trapezoides, parábolas o cúbicas) que juntas <br>
+               forman una región que es similar a la región que se está midiendo, luego calculando el área para cada una de <br>
+                estas formas y, finalmente, agregando todas estas pequeñas áreas juntas.  </br>
+               Se llama así en honor al matemático alemán del siglo XIX, Bernhard Riemann.</p>
+              <p> </p>
+
+      </section>
+      <section class="sigma"> 
+         <h1 style="padding-bottom: 30px;">Explicación</h1>
+         <p>Para encontrar el valor del área de una figura regular se han encontrado mediante procedimientos logicos las formulas <br>
+             que nos llevan a estos resultados, pero en el caso de una figura irregular que no tenemos definida claramente, no existe
+             <br> una formula que englobe el valor de su área.</p>
+             <p>Aun asi podemos aproximarnos mediante la superposición de figuras a las que si tenemos definido un área, como el <br>
+                siguiente ejemplo:
+            </p>
+            <img src="img/fig1.jpg" alt="Se definen con las figuras irregular">
+             <p>En caso de la grafica de una función, podemos utilizar la mismas cualidades de la gráfica para encontrar el área <br>
+                 aproximada. En este caso tendremos la desventaja de no tener el área precisa que si tendriamos en el caso anterior. <br>
+                Para las funciones o parabolas. Econtrar el área  debajo se utilizan dos metodos, el primero es el el calculo integral, <br>
+                 que se explica mas adelante, o podemos usar un metodo grafico conocido como las sumas de Riemman, que consiste en dibujar <br>
+                  figuras debajo de la grafica, figuras como las siguientes</p>
+             
+            <img src="img/riemman.png" alt="Ejemplos de sumas de riemman">
+            
+            <p>Como se observa en las figuras, se utiliza un punto de la parabola para servir de guia, en el azul se usa el vertice <br>
+                 derecho, en el rojo se coloca debajo de la parabola en todos los casos y en el verde es lo contrario, mientras que <br>
+                  el amarillo es el vertice izquierdo que sirve como guia. </p>
+                  <p>En todos ellos la aproximación es mas precisa cuanto mas delgadas son las figuras. Como podemos observar en la <br>
+                     grafica que se encuentra  en el centro de todas las figuras.</p>
+                  <p>El ancho en las sumas de Riemman es importante, ya que todos tienen que ser el mismo para que se puedan usar <br>
+                     formulas que los agrupen y ademas son mas precisos entre mas delgados sean.</p>
+      </section>
+      <section class="sigma"> 
+         <h1 style="padding-bottom: 30px;">Pasos para realizar las sumas</h1>
+         <p> Ya que tenemos la función de donde pretendemos obtener el área y delimitado <br>
+             el ancho podemos sacarlo directamente, con la siguiente formula:</p>
+             <section style="margin-left: 50px; margin-top: 20px;">
+               <div class="ls cart">
+                   <p ><b style="color: rgb(202, 17, 17);">Número de figuras</b><br>
+                   Cociente de Δd y distancia total
+                   </p>
+               </div>
+               <div class="indice cart">
+                   <p><b padding-left ="2px" style="color: rgb(55, 202, 247);"> Δd   area del cuadrado</b></p>
+               </div>
+          
+               </div>
+               <div class="eq-c1">
+                   <span class="intsuma">
+                   <span class="lim" style="color: rgb(202, 17, 17);">n</span>
+                   <span class="sum-frac">&sum;</span>
+                   <span class="lim" style="color: rgb(63, 223, 14);"><i style="color: rgb(223, 133, 14);">i=</i>1</span>
+                   </span>
+                   <div class="fraction">
+                   <span class="fup"><i style="color: rgb(55, 202, 247);">f(xi)*</i></span>
+                   </div>
+               </div>   
+           </section>
+      </section>
+         <section class="sigma">
+
+         </section>
+         <hr>
+</html>

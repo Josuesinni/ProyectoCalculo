@@ -1,0 +1,83 @@
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+.def{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+}
+hr{
+    background: linear-gradient(to right, #6e6d68 0%, #6e6d68 5%, #464543 25%, #353433 50%, #464543 75%, #6e6d68 95%, #6e6d68 100%);
+    width: 100%;
+    height: 10px;
+    border: none;
+}
+.left{
+    float: left;    
+    width: 40%;
+    padding-left: 60px;
+}
+.left p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: #282829;
+}
+.right{
+    float: right;
+    width: 40%;
+    padding-right: 60px;
+}
+.right p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: #282829;
+}
+.right h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #282829;
+}
+.right a{
+    text-decoration: none;
+    color: #282829;
+}
+.right img{
+    height: 40px;
+    width: 40px;
+}
+#dev{
+	width: 900px;
+	height: auto; overflow: hidden;
+	border: 0px solid;
+    margin-top: 15px;
+    align-content: center;
+    width: 900px;
+	height: auto; overflow: hidden;
+	margin: auto;
+}
+
+.uno{
+	width: 280px;
+	height: auto; overflow: hidden;
+	float: left;
+	padding: 5px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nombre{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+

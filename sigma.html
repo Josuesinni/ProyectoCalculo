@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notación Sigma</title>
+    <link rel="stylesheet" href="sigma.css">
+    <link rel="stylesheet" href="banner.css">
+    <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h2 class="title">Proyecto de Calculo</h2>
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="sigma.html">Notación Sigma</a></li>
+                <li><a href="integral.html">Integrales</a></li>
+                <li><a href="rieman.html">Sumas de Riemann</a></li>
+                <li><a href="anti.html">Antiderivadas</a></li>
+            </ul>
+        </div>
+        <nav>
+        </nav>
+    </header>
+    <section class="sigma">
+        <h1 style="padding-bottom: 30px;">Notacion Sigma</h1>
+        <p>La notación de suma (o notación sigma) nos permite escribir la suma de muchos términos en una sola expresión. <br>
+            El operando matemático que nos permite representar sumas de muchos sumandos, n o incluso infinitos sumandos está expresado con la letra griega sigma &sum;(sigma mayúscula, que corresponde a nuesta S de "suma" ). <br>
+            <br>La notación sigma es de la siguiente manera:
+        </p><br>
+        <section style="margin-left: 50px; margin-top: 20px;">
+            <div class="ls cart">
+                <p ><b style="color: rgb(202, 17, 17);">Límite Superior</b><br>
+                Último número de la serie
+                </p>
+            </div>
+            <div class="indice cart">
+                <p><b style="color: rgb(55, 202, 247);"> Índice de la suma</b></p>
+            </div>
+            <div class="li cart" >
+                <p><b style="color: rgb(223, 133, 14);">Límite Inferior</b><br>
+                    Primer número de la serie
+                </p>
+            </div>
+            <div class="li-1 cart" >
+                <p><b style="color: rgb(63, 223, 14);">Límite Inferior</b><br>
+                    Debe ser siempre menor o igual al superior
+                </p>
+            </div>
+            <div class="eq-c1">
+                <span class="intsuma">
+                <span class="lim" style="color: rgb(202, 17, 17);">n</span>
+                <span class="sum-frac">&sum;</span>
+                <span class="lim" style="color: rgb(63, 223, 14);"><i style="color: rgb(223, 133, 14);">i=</i>1</span>
+                </span>
+                <div class="fraction">
+                <span class="fup"><i style="color: rgb(55, 202, 247);">i</i></span>
+                </div>
+            </div>   
+        </section>
+        
+        <div class="condiciones">
+            <h2 style="text-align: center; padding-bottom: 20px; padding-top: 108px;">=== Condiciones ===</h2>
+            <table>
+                <tr>
+                    <th style="width: 300px;">Propiedad</th>
+                    <th style="width: 300px;">Descripción</th>
+                    <th style="width: 300px;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <div class="eq-c">
+                            <span class="intsuma">
+                            <span class="lim">n</span>
+                            <span class="sum-frac">&sum;</span>
+                            <span class="lim"><i>i</i>>n</span>
+                            </span>
+                            <div class="fraction">
+                            <span class="fup">c</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="text-align: justify;">
+                        Dado que el límite de la suma inferior es mayor que el límite de la suma superior, se trata de una suma vacía cuyo valor se define como cero.
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="eq-c">
+                            <span class="intsuma">
+                            <span class="lim">1</span>
+                            <span class="sum-frac">&sum;</span>
+                            <span class="lim"><i>i</i>=3</span>
+                            </span>
+                            <div class="fraction">
+                            <span class="fup">i=0</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;"> 
+                        <div class="eq-c">
+                            <span class="intsuma">
+                            <span class="lim">n</span>
+                            <span class="sum-frac">&sum;</span>
+                            <span class="lim"><i>i</i>=1</span>
+                            </span>
+                            <div class="fraction">
+                            <span class="fup">c=cn</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="text-align: justify;">
+                        Si se suma solamente un valor constante, este se repite n veces
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="eq-c" >
+                            <span class="intsuma">
+                            <span class="lim">3</span>
+                            <span class="sum-frac">&sum;</span>
+                            <span class="lim"><i>i</i>=1</span>
+                            </span>
+                            <div class="fraction">
+                            <span class="fup">8(3)=24</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <div class="eq-c">
+                            <span class="intsuma">
+                            <span class="lim">n</span>
+                            <span class="sum-frac">&sum;</span>
+                            <span class="lim"><i>i</i>=1</span>
+                            </span>
+                            <div class="fraction">
+                            <span class="fup">cf(i)=c
+                                <span class="intsuma">
+                                    <span class="lim">n</span>
+                                    <span class="sum-frac">&sum;</span>
+                                    <span class="lim"><i>i</i>=1</span>
+                                    </span>
+                                    <div class="fraction">
+                                    <span class="fup">f(i)</span>
+                                    </div>
+                            </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="text-align: justify;">
+                        Si la sumatoria tiene un factor constante, puede sacarse de la sumatoria para multiplicarse posteriormente por el resultado.
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="eq-c">
+                            <span class="intsuma">
+                            <span class="lim">n</span>
+                            <span class="sum-frac">&sum;</span>
+                            <span class="lim"><i>i</i>=1</span>
+                            </span>
+                            <div class="fraction">
+                            <span class="fup">5i²=5
+                                <span class="intsuma">
+                                    <span class="lim">n</span>
+                                    <span class="sum-frac">&sum;</span>
+                                    <span class="lim"><i>i</i>=1</span>
+                                    </span>
+                                    <div class="fraction">
+                                    <span class="fup">i²</span>
+                                    </div>
+                            </span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <div class="eq-c">
+                            <span class="intsuma">
+                            <span class="lim">n</span>
+                            <span class="sum-frac">&sum;</span>
+                            <span class="lim"><i>i</i>≠1</span>
+                            </span>
+                            <div class="fraction">
+                            <span class="fup">f(i)=
+                                <span class="intsuma">
+                                    <span class="lim">n</span>
+                                    <span class="sum-frac">&sum;</span>
+                                    <span class="lim"><i>i</i>=1</span>
+                                </span>
+                                <div class="fraction">
+                                    <span class="fup">f(i) -</span>
+                                </div>
+                                <span class="intsuma">
+                                    <span class="lim">i-1</span>
+                                    <span class="sum-frac">&sum;</span>
+                                    <span class="lim"><i>i</i>=1</span>
+                                </span>
+                                <div class="fraction">
+                                    <span class="fup">f(i)</span>
+                                </div>
+                            </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="text-align: justify;">
+                        Cuando el limite inferior es diferente a 1 podemos igualarlo a 1 para hacer aplicar las formulas mas sencillas.
+                        Para esto haremos una resta en la cual la segunda notacion sigma tendra como limite superior el valor del limite inferior original menos 1
+                    </td>
+                    <td style="text-align: center;">
+                    <div class="eq-c">
+                        <span class="intsuma">
+                        <span class="lim">5</span>
+                        <span class="sum-frac">&sum;</span>
+                        <span class="lim"><i>i</i>=3</span>
+                        </span>
+                        <div class="fraction">
+                        <span class="fup">i =
+                            <span class="intsuma">
+                                <span class="lim">5</span>
+                                <span class="sum-frac">&sum;</span>
+                                <span class="lim"><i>i</i>=1</span>
+                            </span>
+                            <div class="fraction">
+                                <span class="fup">i   -   </span>
+                            </div>
+                            <span class="intsuma">
+                                <span class="lim">2</span>
+                                <span class="sum-frac">&sum;</span>
+                                <span class="lim"><i>i</i>=1</span>
+                            </span>
+                            <div class="fraction">
+                                <span class="fup">i</span>
+                            </div>
+                        </span>
+                        </div>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <div class="eq-c">
+                            <span class="intsuma">
+                            <span class="lim">n</span>
+                            <span class="sum-frac">&sum;</span>
+                            <span class="lim"><i>i</i>=1</span>
+                            </span>
+                            <div class="fraction">
+                            <span class="fup">[f(i)±g(i)]=
+                                <span class="intsuma">
+                                    <span class="lim">n</span>
+                                    <span class="sum-frac">&sum;</span>
+                                    <span class="lim"><i>i</i>=1</span>
+                                </span>
+                                <div class="fraction">
+                                    <span class="fup">f(i) ±</span>
+                                </div>
+                                <span class="intsuma">
+                                    <span class="lim">n</span>
+                                    <span class="sum-frac">&sum;</span>
+                                    <span class="lim"><i>i</i>=1</span>
+                                </span>
+                                <div class="fraction">
+                                    <span class="fup">g(i)</span>
+                                </div>
+                            </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="text-align: justify;">
+                        Las sumas algebraicas de términos en una sumatoria pueden realizarse por separado
+                    </td>
+                    <td style="text-align: center;">
+                        <div class="eq-c">
+                            <span class="intsuma">
+                            <span class="lim">n</span>
+                            <span class="sum-frac">&sum;</span>
+                            <span class="lim"><i>i</i>=1</span>
+                            </span>
+                            <div class="fraction">
+                            <span class="fup">(2i²+i)=
+                                <span class="intsuma">
+                                    <span class="lim">n</span>
+                                    <span class="sum-frac">&sum;</span>
+                                    <span class="lim"><i>i</i>=1</span>
+                                </span>
+                                <div class="fraction">
+                                    <span class="fup">2i² +</span>
+                                </div>
+                                <span class="intsuma">
+                                    <span class="lim">n</span>
+                                    <span class="sum-frac">&sum;</span>
+                                    <span class="lim"><i>i</i>=1</span>
+                                </span>
+                                <div class="fraction">
+                                    <span class="fup">i</span>
+                                </div>
+                            </span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <h1 style="text-align: center; padding-bottom: 10px; padding-top: 100px;">Calculadora</h1>
+
+    <section class="sigma-1">
+        
+        <form name="sigma-problem">
+            <input type="number" id="numerador" value="" placeholder="0"> <br>
+            <p class="sigma-symbol">Σ</p>
+
+            <label for="base" class="base" style="margin-top: 148px;">i=</label>
+            <input type="number" id="base" min="0" placeholder="1"  style="margin-left: 40px;">
+            
+            <input type="number" id="multiplicador" placeholder="1">
+            <label for="exponente" id="label-exp">i</label>
+            <input id="exponente" type="number" min="0" max="4" value="" placeholder="1">
+        </form>
+        <div class="resultado">
+            <form id="form">
+            <label for="eq" hidden>Ecuación:</label>
+            <input type="text" id="eq" value="0" hidden/>
+            <label for="resultado">Resultado:</label><input id="resultado" name="resultado" readonly>
+            <input type="submit" value="Calcular" onclick="sigma()" id="btn"/>
+        </form>
+        </div>
+    </section>
+    <section class="grafica">
+        <h2>Grafica</h2>
+        <div id="closed"></div>
+    </section>
+    <section class="proceso">
+        <h2>Procedimiento</h2>
+        <div id="proceso" hidden>
+            <h3>Paso 1: Identificar la Formula</h3>
+        <p>En este problema vamos a utilizar la siguiente formula: </p>
+        <div class="eq-c">
+            <span class="intsuma">
+            <span class="lim" id="nm">n</span>
+            <span class="sum-frac">&sum;</span>
+            <span class="lim"><i>i</i>=1</span>
+            </span>
+            <i>c</i>
+            <div class="fraction">
+            <span class="fup">(<i id="indi"></i>)</span>
+            <span class="bar" id="bar">/</span>
+            <span class="fdn" id="fdn"><i id="divi">n</i></span>
+            </div>
+            <div id="rest" style="display: none;" >
+            <i>-</i>
+              <span class="intsuma" id>
+                <span class="lim">i-1</span>
+                <span class="sum-frac">&sum;</span>
+                <span class="lim"><i>i</i>=1</span>
+            </span>
+            <i>c</i>
+            <div class="fraction">
+                <span class="fup">(<i id="indi_"></i>)</span>
+                <span class="bar" id="bar_">/</span>
+                <span class="fdn" id="fdn_"><i id="divi_">n</i></span>
+            </div>  
+            </div>
+        </div>
+        <h3>Paso 2:Sustituimos los valores</h3>
+        <p id="form-num"></p>
+        <div class="eq-c">
+            <span class="intsuma">
+            <span class="lim" id="lim">n</span>
+            <span class="sum-frac">&sum;</span>
+            <span class="lim"><i>i</i>=1</span>
+            </span>
+            <i id=variable>Variable</i>
+            <div class="fraction">
+            <span class="fup">(<i id="indi1"></i>)</span>
+            <span class="bar" id="bar1">/</span>
+            <span class="fdn" id="fdn1"><i id="divi1">n</i></span>
+            </div>
+            <div id="rest1" style="display: none;" >
+                <i>-</i>
+                  <span class="intsuma" id>
+                    <span class="lim" id="lim1">a</span>
+                    <span class="sum-frac">&sum;</span>
+                    <span class="lim"><i>i</i>=1</span>
+                </span>
+                <i id=variable_>Variable</i>
+                <div class="fraction">
+                    <span class="fup">(<i id="indi1_"></i>)</span>
+                    <span class="bar" id="bar1_">/</span>
+                    <span class="fdn" id="fdn1_"><i id="divi1_">n</i></span>
+                </div>  
+                </div>
+        </div>
+        <h3>Paso 3:Resolvemos</h3>
+        <p id="form-res"></p>
+        <p id="form-res-1"></p>
+        <p id="form-res-2"></p>
+        <p id="form-res-2.1"></p>
+        <p id="form-res-3"></p>
+        </div>
+    </section>
+    <!--Codigo hecho por Zahid Josue Urias Vizcarra
+    PD:Se que leeran esto asi que trabajen y por cierto el codigo se puede optimizar,
+    pero como solo seran 3 paginas a lo mucho no le veo la necesidad, la logica que aplique no es la mejor pero funciona-->
+    <script src="sigma.js"></script>
+</body>
+</html>
